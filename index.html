@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC Centric Cafe | Premium Indoor RC Arena</title>
+    <meta name="description" content="A premium indoor RC arena where adrenaline meets comfort. Drive high-performance RC machines, enjoy great food, and experience a completely unique cafe vibe.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- GSAP & ScrollTrigger for smooth advanced logic if needed, but going with native JS for canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- HERO SECTION (Sticky Canvas) -->
+    <section class="hero-sequence-wrapper" id="hero">
+        <div class="sticky-container">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-overlay-gradient"></div>
+            <div class="hero-end-overlay"></div>
+            
+            <div class="hero-content">
+                <div class="hero-content-inner">
+                    <h1 class="hero-title has-gsap-animation">
+                        <span class="highlight">RC Centric</span> Cafe
+                    </h1>
+                    <h2 class="hero-subtitle has-gsap-animation">Drive. Drift. Dominate.</h2>
+                    <p class="hero-description has-gsap-animation">Experience RC driving like never before.</p>
+                    
+                    <div class="hero-cta-group has-gsap-animation">
+                        <a href="#contact" class="btn btn-primary">Call Now</a>
+                        <a href="#about" class="btn btn-secondary">Visit Us</a>
+                        <a href="https://wa.me/1234567890" target="_blank" class="btn btn-outline">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="hero-post-images">
+                    <div class="post-img-outer img-1">
+                        <div class="post-img-gsap-target">
+                            <div class="post-img-wrapper"><img src="media/images/hero-img-1.jpg" alt="Coffee Selection"></div>
+                        </div>
+                    </div>
+                    <div class="post-img-outer img-2">
+                        <div class="post-img-gsap-target">
+                            <div class="post-img-wrapper"><img src="media/images/hero-img-2.jpg" alt="RC Shake setup"></div>
+                        </div>
+                    </div>
+                    <div class="post-img-outer img-3">
+                        <div class="post-img-gsap-target">
+                            <div class="post-img-wrapper"><img src="media/images/hero-img-3.jpg" alt="Blue Monster Truck"></div>
+                        </div>
+                    </div>
+                    <div class="post-img-outer img-4">
+                        <div class="post-img-gsap-target">
+                            <div class="post-img-wrapper"><img src="media/images/hero-img-4.jpg" alt="Signature Cups"></div>
+                        </div>
+                    </div>
+                    <div class="post-img-outer img-5">
+                        <div class="post-img-gsap-target">
+                            <div class="post-img-wrapper"><img src="media/images/hero-img-5.jpg" alt="Cafe Counter"></div>
+                        </div>
+                    </div>
+                    <div class="post-img-outer img-6">
+                        <div class="post-img-gsap-target">
+                            <div class="post-img-wrapper"><img src="media/images/hero-img-6.png" alt="Suspended RC Truck"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll to Shift Gears</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCENT LINE -->
+    <div class="hero-accent-line"></div>
+
+    <!-- ABOUT US SECTION -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text fade-in-up">
+                    <h2 class="section-title">About <span class="highlight">RC Centric</span> Cafe</h2>
+                    <p class="section-desc">A premium indoor RC arena where adrenaline meets comfort.</p>
+                    <p class="section-body">
+                        We blend high-performance radio-controlled racing with an unparalleled cafe experience. Drive top-tier scale RC machines on professionally designed tracks, enjoy an exquisite culinary menu, and dive into a social atmosphere designed for enthusiasts and newcomers alike.
+                    </p>
+                    <a href="#gallery" class="btn btn-primary mt-4">Discover the Arena</a>
+                </div>
+                <div class="about-image-wrapper fade-in-up delay-1">
+                    <img src="media/images/about-us.jpg" alt="RC Centric Cafe Interior" class="about-image">
+                    <div class="image-accent-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <section class="marquee-section">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>Peri Peri Fries</span> <span>•</span> <span>Loaded Cheese Fries</span> <span>•</span> <span>Kimchi Fusion Ramen</span> <span>•</span> <span>Firecracker Spicy Ramen</span> <span>•</span> <span>Cheesy Garlic Bread</span> <span>•</span> <span>Chocolate Brownie</span> <span>•</span> <span>Blueberry Cheesecake</span> <span>•</span> <span>Classic Cold Brew</span> <span>•</span> <span>Iced Latte</span> <span>•</span> <span>Mojito</span> <span>•</span> <span>Milkshakes</span> <span>•</span> <span>Fruit Slushes</span> <span>•</span> <span>Espresso</span> <span>•</span> <span>Cappuccino</span> <span>•</span> <span>Affogato</span> <span>•</span>
+                <!-- Duplicate for seamless scroll -->
+                <span>Peri Peri Fries</span> <span>•</span> <span>Loaded Cheese Fries</span> <span>•</span> <span>Kimchi Fusion Ramen</span> <span>•</span> <span>Firecracker Spicy Ramen</span> <span>•</span> <span>Cheesy Garlic Bread</span> <span>•</span> <span>Chocolate Brownie</span> <span>•</span> <span>Blueberry Cheesecake</span> <span>•</span> <span>Classic Cold Brew</span> <span>•</span> <span>Iced Latte</span> <span>•</span> <span>Mojito</span> <span>•</span> <span>Milkshakes</span> <span>•</span> <span>Fruit Slushes</span> <span>•</span> <span>Espresso</span> <span>•</span> <span>Cappuccino</span> <span>•</span> <span>Affogato</span> <span>•</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Gallery <span class="label-soon">(Coming Soon)</span></h2>
+                <p class="section-desc">Glimpses of the adrenaline and luxury awaiting you.</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- 6 empty placeholder boxes -->
+                <div class="gallery-item fade-in-up"><div class="placeholder-box"></div></div>
+                <div class="gallery-item fade-in-up delay-1"><div class="placeholder-box"></div></div>
+                <div class="gallery-item fade-in-up delay-2"><div class="placeholder-box"></div></div>
+                <div class="gallery-item fade-in-up"><div class="placeholder-box"></div></div>
+                <div class="gallery-item fade-in-up delay-1"><div class="placeholder-box"></div></div>
+                <div class="gallery-item fade-in-up delay-2"><div class="placeholder-box"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY VISIT US SECTION -->
+    <section class="why-us-section" id="features">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Why Visit Us?</h2>
+            </div>
+            
+            <div class="why-us-layout">
+                <div class="why-us-cards">
+                    <div class="cards-grid">
+                <!-- Card 1 -->
+                <div class="feature-card fade-in-up">
+                    <div class="card-icon">1</div>
+                    <h3 class="card-title">Real RC Experience</h3>
+                    <p class="card-desc">Control powerful, highly-detailed RC machines in a realistic and challenging indoor arena.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card fade-in-up delay-1">
+                    <div class="card-icon">2</div>
+                    <h3 class="card-title">Cafe + Gaming</h3>
+                    <p class="card-desc">Savor artisanal coffee and gourmet comfort food right next to the high-speed action.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card fade-in-up delay-2">
+                    <div class="card-icon">3</div>
+                    <h3 class="card-title">Unique Hangout</h3>
+                    <p class="card-desc">The perfect destination for friends, date nights, groups, and unforgettable weekend plans.</p>
+                </div>
+                    </div>
+                </div>
+                <div class="why-us-video-col fade-in-up delay-1">
+                    <div class="why-us-video">
+                        <video src="media/video/reel.mp4" autoplay loop muted playsinline class="reel-video"></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS SECTION -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">What Drivers Say</h2>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card fade-in-up">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Absolutely mind-blowing tracks. The food was surprisingly top tier. Can't wait for another race session!"</p>
+                    <p class="review-author">- Alex M.</p>
+                </div>
+                <div class="review-card fade-in-up delay-1">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The ultimate weekend spot. Even if you're not an RC pro, it's so much fun just hanging out and eating good ramen."</p>
+                    <p class="review-author">- Sarah K.</p>
+                </div>
+                <div class="review-card fade-in-up delay-2">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"A totally new concept in the city. The dark aesthetics really make the RC lights pop. Must visit."</p>
+                    <p class="review-author">- Rohan D.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-section" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-left">
+                    <h2 class="footer-logo">RC Centric<span class="highlight">.</span></h2>
+                    <h3 class="footer-sub">Visit Us</h3>
+                    <p class="footer-address">
+                        123 Adrenaline Avenue,<br>
+                        Motor Park District,<br>
+                        City Center, 10001
+                    </p>
+                    
+                    <div class="footer-links">
+                        <a href="tel:+123456789" class="btn btn-outline btn-sm">Call Us</a>
+                        <a href="#" class="btn btn-outline btn-sm">Instagram</a>
+                        <a href="#" class="btn btn-outline btn-sm">Zomato</a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.067347716492!2d-122.41941558468205!3d37.77492957975899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter%20HQ!5e0!3m2!1sen!2sus!4v1614728516001!5m2!1sen!2sus" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RC Centric Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
